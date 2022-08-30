@@ -97,8 +97,8 @@
         <div class="container-fluid">
           <div class="header-navbar">
             <div class="header-logo">
-              <a href="onepage-2.html"><img class="light-version-logo" src="assets/img/logo-altay.png" alt="logo"></a>
-              <a href="onepage-2.html"><img class="dark-version-logo" src="assets/img/logo-altay.png" alt="logo"></a>
+              <a href="#"><img class="light-version-logo" src="assets/img/logo-altay.png" alt="logo"></a>
+              <a href="#"><img class="dark-version-logo" src="assets/img/logo-altay.png" alt="logo"></a>
             </div>
             <div class="header-main-nav">
               <!-- Start Mainmanu Nav -->
@@ -106,7 +106,7 @@
                 <div class="d-block d-lg-none">
                   <div class="mobile-nav-header">
                     <div class="mobile-nav-logo">
-                      <a href="onepage-2.html">
+                      <a href="#">
                         <img class="light-mode" src="assets/img/logo-altay.png" alt="Site Logo">
                         <img class="dark-mode" src="assets/img/logo-altay.png" alt="Site Logo">
                       </a>
@@ -983,6 +983,30 @@
 
   <!-- Site Scripts -->
   <script src="assets/js/app.js"></script>
+
+  <script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyAPqvvoV6Ick3D4mPL3wV4SWiMD8ttSnD4",
+      authDomain: "altaykutu-10bc0.firebaseapp.com",
+      projectId: "altaykutu-10bc0",
+      storageBucket: "altaykutu-10bc0.appspot.com",
+      messagingSenderId: "224457662132",
+      appId: "1:224457662132:web:5a2e90a8a4f5573d4601e1",
+      measurementId: "G-WRGF0QV6BL"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 
 
 </body>
